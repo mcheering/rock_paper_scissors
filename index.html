@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>Rock Paper Scissors</title>
+      <meta name="description" content="A simple game of rock, paper, scissors">
+      <meta name="author" content="Matthew Heering">
+
+      <meta property="og:title" content="Rock Paper Scissors">
+      <meta property="og:type" content="website">
+      <meta property="og:description" content="A simple game of rock, paper, scissors">
+
+      <link rel="stylesheet" href="./styles.css">
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+      <!-- your content here... -->
+      <nav class="nav-wrapper">
+            <a class="brand-logo center">Rock, Paper, Scissors</a>
+      </nav>
+
+      <div id="RulesSpace">
+            <h5 id="rules">Rules</h5>
+            <hr>
+            <ol>
+                  <li>Press start, and 3 choices will appear.</li>
+                  <li>Make a choice by clicking one of the symbols, the computer ranomly make a choice</li>
+                  <li>Paper beats rock, rock beats scissors, and scissors beats paper.</li>
+                  <li>You have the same chance of winning each round. Keep pressnign the syumbols and you can continue
+                        to play the computer. You can see your score below. </li>
+            </ol>
+      </div>
+      <button id="startBtn" class="waves-effect waves-light btn">Start</button>
+      <div id="gameSpace">
+            <div class="card-panel teal" id="scoreSpace">
+                  <h5 id="playerWins"></h5>
+                  <h5 id="compWins"></h5>
+            </div>
+
+            <ul id="playerChoices">
+                  <li><button class="playerChoice btn-floating btn-large waves-effect waves-light red fas fa-hand-rock fa-2x"
+                              value="Rock"></button></li>
+                  <li><button class="playerChoice btn-floating btn-large waves-effect waves-light red fas fa-hand-paper fa-2x"
+                              value="Paper"></button></li>
+                  <li><button class="playerChoice btn-floating btn-large waves-effect waves-light red fas fa-hand-scissors fa-2x"
+                              value="Scissors"></button></li>
+            </ul>
+            <h6 id="playerSelection"></h6>
+            <h6 id="compChoice"></h6>
+            <h5 id="gameResult"></h5>
+      </div>
+
+
+
+      <script src="./script.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+
+</html>

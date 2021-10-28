@@ -1,0 +1,102 @@
+header {
+      margin: 0 auto;
+      color: rgb(41, 41, 41);
+      display: flex;
+      justify-content: center;
+}
+hr {
+      width: 90%;
+           color: rgb(41, 41, 41);
+
+}
+
+ol {
+      margin: auto;
+      color: rgb(41, 41, 41);
+
+}
+
+#playerSelection, #compChoice, #gameResult {
+      text-align: center;
+}
+
+#startBtn {
+      display: block;
+      margin: 1rem auto;
+}
+
+#gameSpace {
+      width: 95%;
+      margin: auto;
+      visibility: hidden;
+}
+
+#rules {
+      margin: auto;
+      color: rgb(41, 41, 41);
+
+}
+
+#playerChoices {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto;
+      align-items: center;
+}
+
+.playerChoice {
+      margin:  0.5rem auto;
+}
+
+#scoreSpace {
+      visibility: hidden;
+      display: flex;
+      color: whitesmoke
+}
+
+#RulesSpace {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 1rem auto;
+}
+
+button {
+      padding: 1rem;
+}
+
+@media only screen and (min-width: 300px) {
+  #playerChoices {
+    width: 80%;
+    flex-direction: column;
+  }
+  #scoreSpace {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto 1rem auto;
+      text-align: center;  
+}
+  a {
+        font-size: x-large !important;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  #playerChoices {
+    width: 50%;
+    flex-direction: row;
+  }
+  #scoreSpace {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 80%;
+  }
+
+}
+
+@media only screen and (min-width: 1312px) {
+  #playerChoices {
+    width: 40%;
+  }
+}
